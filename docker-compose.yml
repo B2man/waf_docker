@@ -7,8 +7,8 @@ services:
     restart: unless-stopped
     network_mode: "host"
     environment:
-      - BACKEND=
-      - BLOCKING_PARANOIA=
+      - BACKEND=${BACKEND}
+      - BLOCKING_PARANOIA=${BLOCKING_PARANOIA}
     ports:
       - "9443:8443"
       - "9080:8080"
